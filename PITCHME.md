@@ -95,10 +95,10 @@ Done!
 
 <br>
 <div class="left">
-    <i class="fa fa-user-secret fa-5x" aria-hidden="true"> </i><br>
+    <i class="fa fa-truck fa-5x" aria-hidden="true"> </i><br>
     <a href="https://fontawesome.com/cheatsheet" class="pro-link"> You can use Font Awesome for Icons</a> <br>
     <a href="https://gitpitch.com/pro-features" class="pro-link">
-    More details here.</a>
+    More details on GitPit Pro here.</a>
 </div>
 <div class="right">
     <ul>
