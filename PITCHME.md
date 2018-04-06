@@ -96,6 +96,7 @@ Done!
 <br>
 <div class="left">
     <i class="fa fa-user-secret fa-5x" aria-hidden="true"> </i><br>
+    You can use Font Awesome for Icons <br>
     <a href="https://gitpitch.com/pro-features" class="pro-link">
     More details here.</a>
 </div>
