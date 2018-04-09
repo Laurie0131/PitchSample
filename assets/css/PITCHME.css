@@ -44,10 +44,11 @@ span.aside {
   margin: 0 0 60px 0;
   font-family: "Montserrat", Impact, sans-serif;
   font-weight: normal;
-  line-height: 1.2;
+  line-height: 1.0;
   letter-spacing: -0.03em;
   text-transform: none;
   text-shadow: none;
+   text-align: center;
   word-wrap: break-word;
   display: block;
 }
