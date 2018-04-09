@@ -115,7 +115,7 @@ Done!
 #### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span></p>
 
 
-![UEFI Boot Execution Flow](/assets/images/bootflow.JPG =100x)
+![UEFI Boot Execution Flow](/assets/images/bootflow.JPG&size=25%)
 
 <!--- comment this does not work
 <p>
@@ -129,6 +129,8 @@ Done!
 #### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span></p>
 ![UEFI Boot Execution Flow](/assets/images/bgpages/bg4.png =100x)
 <span style="color:gray; font-size:0.5em">The <b>SEC</b> phase </span>
+---?image=assets/images/bgpages/bg4.png&size=75% 75%
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow - SEC</span></p>
 ---
 ### Go for it.
 ### Just add <span class="gold">PITCHME.md</span> ;)
