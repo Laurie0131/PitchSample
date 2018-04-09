@@ -114,9 +114,9 @@ Done!
 @title[UEFI Boot Flow]
 ### <span class="gold"  text-align: center >UEFI - PI & EDK II Boot Flow </span>
 
-![UEFI Boot Execution Flow](/assets/images/bootflow.JPG){:height="25%" width="25%"}
+![UEFI Boot Execution Flow](/assets/images/bootflow.JPG){:height="5%" width="5%"}
 
-<span style="color:gray; font-size:0.7em">  <i class="fa fa-truck fa-1x" aria-hidden="true"> </i><b>Relative URL</b></span>
+<span style="color:gray; font-size:0.5em">  <i class="fa fa-truck fa-1x" aria-hidden="true"> </i> &nbsp;&nbsp;&nbsp;&nbsp; <b>Relative URL</b></span>
 
 <span style="color:gray; font-size:0.5em">the <b>UEFI Boot Execution Flow</b> </span>
 
