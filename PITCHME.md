@@ -111,7 +111,8 @@ Done!
 </div>
 
 ---
-### <span class="gold">UEFI Platform Initialiation (PI) & EDK II Boot Flow </span>
+@title[UEFI Boot Flow]
+### <span class="gold">UEFI - PI & EDK II Boot Flow </span>
 <span style="color:gray; font-size:0.7em">Inline Image at GitHub Repo <b>Relative URL</b></span>
 
 ![UEFI Boot Execution Flow](/assets/images/bootflow.JPG)
