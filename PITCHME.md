@@ -112,7 +112,7 @@ Done!
 
 ---
 @title[UEFI Boot Flow]
-### <span class="gold"  text-align: center >UEFI - PI & EDK II Boot Flow </span>
+#### <span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span>
 
 <!--- comment
 ![UEFI Boot Execution Flow](/assets/images/bootflow.JPG =100x20)
