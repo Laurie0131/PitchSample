@@ -113,9 +113,10 @@ Done!
 ---
 @title[UEFI Boot Flow]
 ### <span class="gold">UEFI - PI & EDK II Boot Flow </span>
-<span style="color:gray; font-size:0.7em">Inline Image at GitHub Repo <b>Relative URL</b></span>
 
 ![UEFI Boot Execution Flow](/assets/images/bootflow.JPG)
+
+<span style="color:gray; font-size:0.7em">  <i class="fa fa-truck fa-1x" aria-hidden="true"> </i><b>Relative URL</b></span>
 
 <span style="color:gray; font-size:0.5em">the <b>UEFI Boot Execution Flow</b> </span>
 
