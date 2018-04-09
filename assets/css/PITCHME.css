@@ -67,3 +67,11 @@ span.aside {
 .reveal a.pro-link {
     font-size: 0.5em;
 }
+
+.reveal .slides {
+    text-align: left;
+}
+.reveal .slides section>* {
+    margin-left: 0;
+    margin-right: 0;
+}
