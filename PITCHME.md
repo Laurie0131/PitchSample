@@ -117,7 +117,7 @@ Done!
 <!--- comment
 ![UEFI Boot Execution Flow](/assets/images/bootflow.JPG =100x20)
 -->
-<img src=/assets/images/bootflow.JPG width="425"/>
+<img src=https://github.com/Laurie0131/PitchSample/blob/master/assets/images/bootflow.JPG width="425"/>
 <span style="color:gray; font-size:0.5em">  <i class="fa fa-truck fa-1x" aria-hidden="true"> </i> &nbsp;&nbsp;&nbsp;&nbsp; <b>Relative URL</b></span>
 
 <span style="color:gray; font-size:0.5em">the <b>UEFI Boot Execution Flow</b> </span>
