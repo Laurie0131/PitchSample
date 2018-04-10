@@ -126,9 +126,9 @@ Done!
 
 ---
 @title[UEFI Boot Flow Sec]
-#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span></p>
-<p align="center"><span style="color:gray; font-size:0.5em"> <b>SEC Phase</b> </span>
-![UEFI Boot Execution Flow](/assets/images/bgpages/bg4.png =100x)
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:gray; font-size:0.5em"> <b>SEC Phase</b> </span></p>
+
+![UEFI Boot Execution Flow](/assets/images/bgpages/bg4.png =10x)
 
 
 Note:
