@@ -370,6 +370,56 @@ White Paper Example: <a href="https://github.com/mangguo321/Braswell/blob/master
 Open Braswell - Design and Porting Guide</a></span></p>
 
 ---
+@title[Intel FSP Diagram-1]
+#### <p align="center"><span class="gold"  text-align: top >Intel FSP to Open Source EDK II </span>
+    
+![Intel-FSP](/assets/images/bgpages/bg21.png =10x)
+
+
+Note:
+Intel FSP 1<Br>
++++
+@title[Intel FSP Diagram-2]
+#### <p align="center"><span class="gold"  text-align: top >Intel FSP to Open Source EDK II </span>
+    
+![Intel-FSP](/assets/images/bgpages/bg22.png =10x)
+
+
+Note:
+Intel FSP 2<Br>    
++++
+@title[Intel FSP Diagram-3]
+#### <p align="center"><span class="gold"  text-align: top >Intel FSP "Produced" to "Consuming" IA Firmware </span>
+    
+![Intel-FSP](/assets/images/bgpages/bg23.png =10x)
+
+
+Note:
+Applying “Produced” Intel® Firmware Support Package (FSP) to “Consuming” IA firmware <Br>  
+
+---
+@title[Intel FSP from UEFI Boot Flow]
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>FSP</b> </span></p>
+
+![UEFI Boot Execution Flow](/assets/images/bgpages/bg24.png =10x)
+
+
+Note:
+Platform Initialization (PI) & UEFI w/ EDK <Br>
+- Intel FSP boot flow    
+
++++
+@title[Intel FSP from UEFI Boot Flow 2]
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>FSP</b> </span></p>
+
+![UEFI Boot Execution Flow](/assets/images/bgpages/bg25.png =10x)
+
+
+Note:
+Platform Initialization (PI) & UEFI w/ EDK <Br>
+- Intel FSP boot flow    
+
+---
 
 ### Go for it.
 ### Just add <span class="gold">PITCHME.md</span> ;)
