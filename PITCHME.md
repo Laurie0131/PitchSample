@@ -487,9 +487,10 @@ Notes:
 ---
 @title[UEFI & EDK II Timeline]    
 <p align="center"<span style="color:white; font-size:0.6em"> UEFI Specification & EDK II Reference Implementation Timeline  </span></p>
+<p align="center"<span style="color:white; font-size:0.3em"> <a href="http://www.uefi.org/">UEFI Specification</a> -top &nbsp;&nbsp;&nbsp;&nbsp; & &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.tiancore.org/">EDK II Open Source</a> -bottom </span></p>
 ![UEFI & EDK II Timeline](/assets/images/bgpages/bg30.png =10x)
 
-<p align="center"<span style="color:white; font-size:0.3em"> <a href="http://www.uefi.org/">UEFI Specification</a> -top &nbsp;&nbsp;&nbsp;&nbsp; & &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.tiancore.org/">EDK II Open Source</a> -bottom </span></p>
+
 ---
 
 
