@@ -126,9 +126,40 @@ Done!
 
 ---
 @title[UEFI Boot Flow Sec]
-#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow SEC</span></p>
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span></p>
+##### - SEC phase
 ![UEFI Boot Execution Flow](/assets/images/bgpages/bg4.png =100x)
 <span style="color:gray; font-size:0.5em">The <b>SEC</b> phase </span>
+
+Note:
+SEC 
+Function <Br>
+          Consumes the Reset vector on IA
+Serving as the root of trust in the system
+Initial code that takes control of the system
+May choose to authenticate the PEI Foundation 
+
+Switch to 32-bit flat mode
+Initialize the Boot strap processor BSP
+Initialize PEI temporary memory NEM / CAR
+Transfer control to PEI Core
+
+SEC will have Platform specific functions
+-AP waking stub
+-Early microcode update
+-Collect BIST (Built-in Self Test)
+-Other charactistics of SEC   
+-         Executed in place from flash
+-          Written in assembly (16-bit & 32-bit)
+
+-A Firmware Volume (FV) is a logical firmware device. The basic storage <br>
+repository for data and/or code is the firmware volume. Each firmware volume is organized into a
+file system. As such, the file is the base unit of storage for firmware
+
+-Firmware File System <br>
+A firmware file system (FFS) describes the organization of files and (optionally) free space within
+the firmware volume. Each firmware file system has a unique GUID, which is used by the firmware
+to associate a driver with a newly exposed firmware volume
 
 
 ---
