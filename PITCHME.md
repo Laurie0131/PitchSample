@@ -363,8 +363,9 @@ Section on Intel FSP
 
 <p align="left" style="margin-top: -3px; margin-bottom: -3px"><span style="color:white; font-size:0.5em"> 
 <br>
+<BR>
 Intel FSP is currently available for the many Intel hardware-producing divisions &nbsp;&nbsp;&nbsp;
-See:  https://firmware.intel.com/learn/fsp/about-intel-fsp <br>
+See: <a href="https://firmware.intel.com/learn/fsp/about-intel-fsp"> About Intel FSP</a> <br>
 White Paper Example: <a href="https://github.com/mangguo321/Braswell/blob/master/Documents/Open_Braswell_Platform_Designing_Porting_Guide.pdf">
 Open Braswell - Design and Porting Guide</a></span></p>
 
