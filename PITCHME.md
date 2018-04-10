@@ -361,10 +361,9 @@ Section on Intel FSP
 - Plugs into existing firmware frameworks
 - Integration guide, includes API documentation
 
-<p align="center"><span style="color:gray; font-size:0.5em"> 
+<p align="left" style="margin-top: 0; margin-bottom: 0"><span style="color:white; font-size:0.5em"> 
 Intel FSP is currently available for the many Intel hardware-producing divisions <br>
-See:  https://firmware.intel.com/learn/fsp/about-intel-fsp </span>
-<p align="center"><span style="color:gray; font-size:0.5em"> 
+See:  https://firmware.intel.com/learn/fsp/about-intel-fsp <br>
 White Paper Example: <a href="https://github.com/mangguo321/Braswell/blob/master/Documents/Open_Braswell_Platform_Designing_Porting_Guide.pdf">
 Open Braswell - Design and Porting Guide</a></span>
 
