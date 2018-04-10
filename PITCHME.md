@@ -115,22 +115,22 @@ Done!
 #### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span></p>
 
 
-![UEFI Boot Execution Flow](/assets/images/bootflow.JPG&size=25%)
+![UEFI Boot Execution Flow](/assets/images/bootflow.JPG)
 
 <!--- comment this does not work
 <p>
 <img src=https://github.com/Laurie0131/PitchSample/blob/master/assets/images/bootflow.JPG width="425"/></p>
 -->
-<span style="color:gray; font-size:0.5em">  <i class="fa fa-truck fa-1x" aria-hidden="true"> </i> &nbsp;&nbsp;&nbsp;&nbsp; <b>Relative URL</b></span>
-<span style="color:gray; font-size:0.5em">The <b>UEFI Boot Execution Flow</b> </span>
+
+<span style="color:gray; font-size:0.5em"> <b>UEFI Boot Execution Flow</b> </span>
 
 ---
 @title[UEFI Boot Flow Sec]
-#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span></p>
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow SEC</span></p>
 ![UEFI Boot Execution Flow](/assets/images/bgpages/bg4.png =100x)
 <span style="color:gray; font-size:0.5em">The <b>SEC</b> phase </span>
----?image=assets/images/bgpages/bg4.png&size=75% 75%
-#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow - SEC</span></p>
+
+
 ---
 ### Go for it.
 ### Just add <span class="gold">PITCHME.md</span> ;)
