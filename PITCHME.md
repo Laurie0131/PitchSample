@@ -389,9 +389,9 @@ Note:
 Intel FSP 2<Br>    
 +++
 @title[Intel FSP Diagram-3]
-#### <p align="center"><span class="gold"  text-align: top >Intel FSP "Produced" to "Consuming" IA Firmware </span>
+#### <p align="center"><span  text-align: top >Intel FSP "Produced" to "Consuming" IA Firmware </span>
     
-![Intel-FSP](/assets/images/bgpages/bg23.png =10x)
+![Intel-FSP](/assets/images/bgpages/bg23_1.png =10x)
 
 
 Note:
