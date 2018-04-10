@@ -437,6 +437,16 @@ Platform Initialization (PI) & UEFI w/ EDK <Br>
 		w/ extra header</span></li>
  <li> 	<p style="margin-top: -1px; margin-bottom: -1px"><span style="color:white; font-size:0.75em">Configure w/Vital Product Data (VPD)-style Platform 
 		Configuration Data (PCD) externalized from the modules</span></li>
+ 
+</ul>
+</span>
++++
+@title[Intel FSP Producer-continue]
+##### <p align="center"<span class="gold"  text-align: top >Intel® FSP  - Producer </span></p>
+
+<span style="margin-top: -1px; margin-bottom: -1px">
+<ul>
+
  <li> 	<p style="margin-top: -1px; margin-bottom: -1px"><span style="color:white; font-size:0.75em">Resultant output state reported via UEFI Platform 
 		Initialization (PI) Hand Off Block (HOB)</span></li>
  <li> 	<p style="margin-top: -1px; margin-bottom: -1px"><a href="http://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/fsp-architecture-spec-v2.pdf">
