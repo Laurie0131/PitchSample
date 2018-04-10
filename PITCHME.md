@@ -169,16 +169,78 @@ to associate a driver with a newly exposed firmware volume
 
 Note:
 PEI Function <Br>
+- PEI Primary goals:
+  -	Discover boot mode (Normal, S3, Recovery)
+  - Discover and initialize some RAM that won’t be reconfigured
+  -	Discover location of FV(s) containing DXE Core & Architecture Protocols and Launch DXE core
+
+- PEI Phases – 
+   - Pre – memory Init
+   - Memory reference code (MRC)
+   - Post Memory Init
+
+Components: 
+- Binaries: PEI Core and PEI Modules (PEIMs)
+PEIMs are modules scheduled by the PEI core in the early phase of platform initialization. PEIMs are typically executed in place before system memory is available. 
+- On IA running in No Eviction mode (NEM) aka.  Cache as RAM
+
+Interfaces: Methods of Inter-PEIM communication
+Core set of services (PeiServices), PEIM to PEIM Interfaces (PPIs), and simple Notifies (no timer in PEI)
+
+
+
+
 ---
 @title[UEFI Boot Flow PEI-Hobs]
-#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>PEI  - Hobs</b> </span></p>
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>Hobs</b> </span></p>
 
 ![UEFI Boot Execution Flow](/assets/images/bgpages/bg5.png =10x)
 
 
 Note:
 PEI - Hobs <Br>
-        
+Transition to DXE :
+- HOBS  – a series of data structures in memory, created during PEI, that describe platform features, configuration, or data. HOBs are produced during PEI, and read-only during DXE (consumer). 
+
+- **DXE IPL** 
+- No hard coded addresses allowed
+- Find Largest Physical Memory HOB
+  - Ideally this should be near Top Of Memory (TOM)
+  - Allocate DXE Stack from Top of Memory
+- Build HOB that describes DXE Stack
+- Search FVs from HOB List for DXE Core
+- Load DXE Core into Memory (PE/COFF)
+- Build HOB that describes DXE Core
+- Switch Stacks and Handoff to DXE Core
+
+---
+@title[UEFI Boot Flow DXE]
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>DXE</b> </span></p>
+
+![UEFI Boot Execution Flow](/assets/images/bgpages/bg5_1.png =10x)
+
+
+Note:
+DXE <Br>
+---
+@title[UEFI Boot Flow DXE]
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>DXE</b> </span></p>
+
+![UEFI Boot Execution Flow](/assets/images/bgpages/bg6.png =10x)
+
+
+Note:
+DXE - EFI System Table<Br>   
+
++++
+@title[UEFI Boot Flow EFI System Table]
+#### <p align="center"><span class="gold"  text-align: top >UEFI System Table </span>
+
+![UEFI Boot Execution Flow](/assets/images/bgpages/bg6.png =10x)
+Note:
+DXE - EFI System Table<Br>   
+Created in DXE and is the pointer to everything in the system
+    
 ---
 ### Go for it.
 ### Just add <span class="gold">PITCHME.md</span> ;)
