@@ -451,8 +451,8 @@ Platform Initialization (PI) & UEFI w/ EDK <Br>
  <li> 	<p style="margin-top: -1px; margin-bottom: -1px"><span style="color:white; font-size:0.75em">Resultant output state reported via UEFI Platform 
 		Initialization (PI) Hand Off Block (HOB)</span></li>
  <li> 	<p style="margin-top: -1px; margin-bottom: -1px"><a href="http://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/fsp-architecture-spec-v2.pdf">
-		<span style="color:white; font-size:0.75em">Intel® Firmware Support Package (Intel® FSP) External 
-		Architecture Specification (EAS) v2.0</span></a></li>
+		<span style="font-size:0.75em">Intel® Firmware Support Package (Intel® FSP) External 
+		Architecture Specification (EAS) v2.0 PDF</span></a></li>
  <li> 	<p style="margin-top: -1px; margin-bottom: -1px"><span style="color:white; font-size:0.75em">Resource: https://firmware.intel.com/blog/open-source-platforms-edkii-using-intel-fsp</span></li>
 </ul>
 </span>
