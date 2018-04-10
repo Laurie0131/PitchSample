@@ -236,12 +236,142 @@ DXE - EFI System Table<Br>
 @title[UEFI Boot Flow EFI System Table]
 #### <p align="center"><span class="gold"  text-align: top >UEFI System Table </span>
 
-![UEFI Boot Execution Flow](/assets/images/bgpages/bg6.png =10x)
+![UEFI Boot Execution Flow](/assets/images/bgpages/bg7.png =10x)
 Note:
 DXE - EFI System Table<Br>   
 Created in DXE and is the pointer to everything in the system
-    
+
 ---
+@title[UEFI Boot Flow DXE- UEFI Drivers]
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>DXE</b> </span></p>
+
+![UEFI Boot Execution Flow](/assets/images/bgpages/bg8.png =10x)
+
+
+Note:
+DXE - UEFI Drivers<Br>
+
+---
+@title[UEFI Boot Flow BDS]
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>BDS</b> </span></p>
+
+![UEFI Boot Execution Flow](/assets/images/bgpages/bg9.png =10x)
+
+
+Note:
+BDS<Br>
+
++++
+@title[UEFI Boot Flow Device Path]
+#### <p align="center"><span class="gold"  text-align: top >UEFI Device Path and Global Variables</span>
+
+![UEFI Boot Execution Flow](/assets/images/bgpages/bg10_1.png =10x)
+
+
+Note:
+Device Path and Global Variables<Br>
+
+---
+@title[UEFI Boot Flow HII]
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>HII</b> </span></p>
+
+![UEFI Boot Execution Flow](/assets/images/bgpages/bg11.png =10x)
+
+
+Note:
+HII<Br>
+    
++++
+@title[UEFI Boot Flow HII- Simple]
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>HII</b> </span></p>
+
+![UEFI Boot Execution Flow](/assets/images/bgpages/bg12.png =10x)
+Note:
+HII<Br>
+    Simple
++++
+@title[UEFI Boot Flow HII- Complex]
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>HII</b> </span></p>
+
+![UEFI Boot Execution Flow](/assets/images/bgpages/bg13.png =10x)
+
+Note:
+HII<Br>
+    Complex
+---
+@title[UEFI Boot Flow Shell]
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>TSL</b> </span></p>
+
+![UEFI Boot Execution Flow](/assets/images/bgpages/bg14.png =10x)
+
+
+Note:
+UEFI Shell<Br>
+---
+@title[UEFI Boot Flow Boot Loader]
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>Boot Loader</b> </span></p>
+
+![UEFI Boot Execution Flow](/assets/images/bgpages/bg15.png =10x)
+
+
+Note:
+Boot Loader<Br>
+
++++                
+@title[UEFI Boot Flow Boot UEFI OS]
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>Boot UEFI OS</b> </span></p>
+
+![UEFI Boot Execution Flow](/assets/images/bgpages/bg16.png =10x)
+
+
+Note:
+Boot UEFI OS<Br>
+
+---
+@title[UEFI Boot Legacy]
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>Boot Legacy</b> </span></p>
+
+![UEFI Boot Execution Flow](/assets/images/bgpages/bg17.png =10x)
+
+
+Note:
+Legacy boot with CSM<Br>
+
++++
+@title[UEFI Boot Legacy no UEFI]
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>Boot Legacy</b> </span></p>
+
+![UEFI Boot Execution Flow](/assets/images/bgpages/bg18.png =10x)
+
+
+Note:
+Legacy boot with CSM<Br>
+
+---
+@title[Intel FSP Section]
+#### The Intel® Firmware Support Package (Intel® FSP)
+
+Note:
+Section on Intel FSP
+---
+@title[Intel FSP Description]
+##### The Intel® Firmware Support Package (Intel® FSP) Components 
+-CPU, memory controller, and chipset initialization functions as a binary package
+-Provides silicon initialization ingredients
+-Plugs into existing firmware frameworks
+-Integration guide, includes API documentation
+
+<div class="right">
+    <ul>
+        <li>Private Repos</li>
+        <li>Private URLs</li>
+        <li>Password-Protection</li>
+        <li>Image Opacity</li>
+        <li>SVG Image Support</li>
+    </ul>
+</div>
+---
+
 ### Go for it.
 ### Just add <span class="gold">PITCHME.md</span> ;)
 <br>
