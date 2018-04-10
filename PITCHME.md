@@ -427,7 +427,7 @@ Platform Initialization (PI) & UEFI w/ EDK <Br>
 ---
 @title[Intel FSP Producer]
 ##### <p align="center"<span class="gold"  text-align: top >Intel® FSP  - Producer </span></p>
-<div class="right">
+<div class="left">
     <ul>
         <li><span style="color:white; font-size:0.75em">Examples of binary instances on http://www.intel.com/fsp 
 		with integration guides </span></li>
