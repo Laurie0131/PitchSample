@@ -371,7 +371,7 @@ Open Braswell - Design and Porting Guide</a></span></p>
 
 ---
 @title[Intel FSP Diagram-1]
-#### <p align="center"><span class="gold"  text-align: top >Intel FSP to Open Source EDK II </span>
+#### <p align="center"><span class="gold"  text-align: top >Intel® FSP to Open Source EDK II </span>
     
 ![Intel-FSP](/assets/images/bgpages/bg21.png =10x)
 
@@ -380,7 +380,7 @@ Note:
 Intel FSP 1<Br>
 +++
 @title[Intel FSP Diagram-2]
-#### <p align="center"><span class="gold"  text-align: top >Intel FSP to Open Source EDK II </span>
+#### <p align="center"><span class="gold"  text-align: top >Intel® FSP to Open Source EDK II </span>
     
 ![Intel-FSP](/assets/images/bgpages/bg22.png =10x)
 
