@@ -319,7 +319,7 @@ Boot Loader<Br>
 
 +++                
 @title[UEFI Boot Flow Boot UEFI OS]
-#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>Boot UEFI OS</b> </span></p>
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;-&nbsp;<b>Boot UEFI OS</b> </span></p>
 
 ![UEFI Boot Execution Flow](/assets/images/bgpages/bg16.png =10x)
 
@@ -329,7 +329,7 @@ Boot UEFI OS<Br>
 
 ---
 @title[UEFI Boot Legacy]
-#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>Boot Legacy</b> </span></p>
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;-&nbsp;<b>Boot Legacy</b> </span></p>
 
 ![UEFI Boot Execution Flow](/assets/images/bgpages/bg17.png =10x)
 
@@ -339,7 +339,7 @@ Legacy boot with CSM<Br>
 
 +++
 @title[UEFI Boot Legacy no UEFI]
-#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>Boot Legacy</b> </span></p>
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;-&nbsp;<b>Boot Legacy</b> </span></p>
 
 ![UEFI Boot Execution Flow](/assets/images/bgpages/bg18.png =10x)
 
@@ -349,27 +349,19 @@ Legacy boot with CSM<Br>
 
 ---
 @title[Intel FSP Section]
-#### The Intel® Firmware Support Package (Intel® FSP)
-
+#### <p align="center"><span class="gold"  text-align: top >The Intel® Firmware Support Package (Intel® FSP)
+</span>
 Note:
 Section on Intel FSP
 ---
 @title[Intel FSP Description]
 ##### The Intel® Firmware Support Package (Intel® FSP) Components 
--CPU, memory controller, and chipset initialization functions as a binary package
--Provides silicon initialization ingredients
--Plugs into existing firmware frameworks
--Integration guide, includes API documentation
+- CPU, memory controller, and chipset initialization functions as a binary package
+- Provides silicon initialization ingredients
+- Plugs into existing firmware frameworks
+- Integration guide, includes API documentation
 
-<div class="right">
-    <ul>
-        <li>Private Repos</li>
-        <li>Private URLs</li>
-        <li>Password-Protection</li>
-        <li>Image Opacity</li>
-        <li>SVG Image Support</li>
-    </ul>
-</div>
+
 ---
 
 ### Go for it.
