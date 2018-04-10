@@ -160,7 +160,25 @@ A firmware file system (FFS) describes the organization of files and (optionally
 the firmware volume. Each firmware file system has a unique GUID, which is used by the firmware
 to associate a driver with a newly exposed firmware volume
 
+---
+@title[UEFI Boot Flow PEI]
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>PEI</b> </span></p>
 
+![UEFI Boot Execution Flow](/assets/images/bgpages/bg4_1.png =10x)
+
+
+Note:
+PEI Function <Br>
+---
+@title[UEFI Boot Flow PEI-Hobs]
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>PEI  - Hobs</b> </span></p>
+
+![UEFI Boot Execution Flow](/assets/images/bgpages/bg5.png =10x)
+
+
+Note:
+PEI - Hobs <Br>
+        
 ---
 ### Go for it.
 ### Just add <span class="gold">PITCHME.md</span> ;)
