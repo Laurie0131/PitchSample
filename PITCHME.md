@@ -390,8 +390,8 @@ Intel FSP 2<Br>
 +++
 @title[Intel FSP Diagram-3]
 
-<p align="left" style="margin-top: -3px; margin-bottom: -3px"><span style="color:white; font-size:0.9em"> 
-Intel®  FSP "Produced" to "Consuming" Intel® Architecture Firmware </span>
+<p align="center" style="margin-top: -3px; margin-bottom: -3px"><span style="color:white; font-size:0.75em"> 
+Intel®  FSP "Produced" to <br> "Consuming" Intel® Architecture Firmware </span>
     
 ![Intel-FSP](/assets/images/bgpages/bg23_1.png =10x)
 
