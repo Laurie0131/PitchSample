@@ -389,7 +389,9 @@ Note:
 Intel FSP 2<Br>    
 +++
 @title[Intel FSP Diagram-3]
-#### <p align="center"><span  text-align: top >Intel FSP "Produced" to "Consuming" IA Firmware </span>
+
+<p align="left" style="margin-top: -3px; margin-bottom: -3px"><span style="color:white; font-size:0.9em"> 
+Intel®  FSP "Produced" to "Consuming" Intel® Architecture Firmware </span>
     
 ![Intel-FSP](/assets/images/bgpages/bg23_1.png =10x)
 
@@ -410,6 +412,7 @@ Platform Initialization (PI) & UEFI w/ EDK <Br>
 
 +++
 @title[Intel FSP from UEFI Boot Flow 2]
+
 #### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>FSP</b> </span></p>
 
 ![UEFI Boot Execution Flow](/assets/images/bgpages/bg25.png =10x)
