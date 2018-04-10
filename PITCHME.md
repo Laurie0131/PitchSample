@@ -484,8 +484,12 @@ Notes:
 - UEFI PI Specification v1.6 (5/2017)
 
 
+---
+@title[UEFI & EDK II Timeline]    
+<p align="center"<span style="color:white; font-size:0.5em"> UEFI Specification & EDK II Reference Implementation Timeline  </span></p>
+![UEFI & EDK II Timeline](/assets/images/bgpages/bg30.png =10x)
 
-
+<p align="center"<span style="color:gray; font-size:0.25em"> <a href="http://www.uefi.org/">UEFI Specification</a>  & <a href="http://www.tiancore.org/">EDK II Open Source</a>  </span></p>
 ---
 
 
