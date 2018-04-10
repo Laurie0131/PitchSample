@@ -427,7 +427,7 @@ Platform Initialization (PI) & UEFI w/ EDK <Br>
 ---
 @title[Intel FSP Producer]
 ##### <p align="center"<span class="gold"  text-align: top >Intel® FSP  - Producer </span></p>
-<div class="left">
+
     <ul>
         <li><span style="color:white; font-size:0.75em">Examples of binary instances on http://www.intel.com/fsp 
 		with integration guides </span></li>
@@ -444,7 +444,6 @@ Platform Initialization (PI) & UEFI w/ EDK <Br>
 		Architecture Specification (EAS) v2.0</span></a></li>
 		<li><span style="color:white; font-size:0.75em">Resource: https://firmware.intel.com/blog/open-source-platforms-edkii-using-intel-fsp</span></li>
     </ul>
-</div>
 
 ---
 @title[Intel FSP Source]
