@@ -309,7 +309,7 @@ Note:
 UEFI Shell<Br>
 ---
 @title[UEFI Boot Flow Boot Loader]
-#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>Boot Loader</b> </span></p>
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">-&nbsp;<b>Boot Loader</b> </span></p>
 
 ![UEFI Boot Execution Flow](/assets/images/bgpages/bg15.png =10x)
 
@@ -319,7 +319,7 @@ Boot Loader<Br>
 
 +++                
 @title[UEFI Boot Flow Boot UEFI OS]
-#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;-&nbsp;<b>Boot UEFI OS</b> </span></p>
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">-&nbsp;<b>Boot UEFI OS</b> </span></p>
 
 ![UEFI Boot Execution Flow](/assets/images/bgpages/bg16.png =10x)
 
@@ -329,7 +329,7 @@ Boot UEFI OS<Br>
 
 ---
 @title[UEFI Boot Legacy]
-#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;-&nbsp;<b>Boot Legacy</b> </span></p>
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">-&nbsp;<b>Boot Legacy</b> </span></p>
 
 ![UEFI Boot Execution Flow](/assets/images/bgpages/bg17.png =10x)
 
@@ -349,18 +349,24 @@ Legacy boot with CSM<Br>
 
 ---
 @title[Intel FSP Section]
-#### <p align="center"><span class="gold"  text-align: top >The Intel® Firmware Support Package (Intel® FSP)
+#### <p align="center"><span class="gold"  text-align: top >The Intel® Firmware Support Package <BR> (Intel® FSP)
 </span>
 Note:
 Section on Intel FSP
 ---
 @title[Intel FSP Description]
-##### The Intel® Firmware Support Package (Intel® FSP) Components 
+##### <span class="gold"  text-align: top >Intel® FSP  -  Components </span>
 - CPU, memory controller, and chipset initialization functions as a binary package
 - Provides silicon initialization ingredients
 - Plugs into existing firmware frameworks
 - Integration guide, includes API documentation
 
+<p align="center"><span style="color:gray; font-size:0.5em"> 
+Intel FSP is currently available for the many Intel hardware-producing divisions <br>
+See:  https://firmware.intel.com/learn/fsp/about-intel-fsp </span>
+<p align="center"><span style="color:gray; font-size:0.5em"> 
+White Paper Example: <a href="https://github.com/mangguo321/Braswell/blob/master/Documents/Open_Braswell_Platform_Designing_Porting_Guide.pdf">
+Open Braswell - Design and Porting Guide</a></span>
 
 ---
 
