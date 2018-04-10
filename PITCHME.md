@@ -122,8 +122,10 @@ Done!
 <img src=https://github.com/Laurie0131/PitchSample/blob/master/assets/images/bootflow.JPG width="425"/></p>
 -->
 
-<p align="center"><span style="color:gray; font-size:0.5em"> <b>UEFI Boot Execution Flow</b> </span>
-
+<p align="center"><span style="color:gray; font-size:0.5em"> <b>UEFI  and Platform Initialziation (PI) Boot Execution Flow</b> </span>
+Note:
+The next set of slides will detail the phases of the boot execution flow for UEFI
+    
 ---
 @title[UEFI Boot Flow Sec]
 #### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>SEC</b> </span></p>
@@ -423,6 +425,49 @@ Platform Initialization (PI) & UEFI w/ EDK <Br>
 - Intel FSP boot flow    
 
 ---
+@title[Intel FSP Producer]
+##### <span class="gold"  text-align: top >Intel® FSP  - Producer </span>
+
+- Examples of binary instances on http://www.intel.com/fsp with integration guides 
+- This includes hardware initialization code that is EDK II based PEI Modules (PEIM’s)
+- Modules are encapsulated as a UEFI PI firmware volume w/ extra header
+- Configure w/Vital Product Data (VPD)-style Platform Configuration Data (PCD) externalized from the modules
+- Resultant output state reported via UEFI Platform Initialization (PI) Hand Off Block (HOB)
+- <a href="http://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/fsp-architecture-spec-v2.pdf"> Intel® Firmware Support Package (Intel® FSP) External Architecture Specification (EAS) v2.0 </a>
+- Resource: https://firmware.intel.com/blog/open-source-platforms-edkii-using-intel-fsp 
+---
+@title[Intel FSP Source]
+##### <span class="gold"  text-align: top >Source for Intel® FSP  Producer Code</span>
+- CPU and chipset-specific code for PEIM’s inside of the Intel FSP can be open or closed, added to…
+- PEI core and infrastructure code at <a href="https://github.com/tianocore/edk2"> tianocore.org/edk2 </a>
+  - <a href="https://github.com/tianocore/edk2/tree/master/MdePkg"> /MdePkg </a>
+  - <a href="https://github.com/tianocore/edk2/tree/master/MdeModulePkg"> /MdeModulePkg </a>
+- And the code to create the Intel FSP interfaces can be found at 
+   - <a href="https://github.com/tianocore/edk2/tree/master/IntelFsp2Pkg"> /IntelFsp2Pkg </a>
+
+
+---  
+@title[Whats New in UEFI Section]    
+#### <p align="center"><span class="gold"  text-align: top >What's new in the UEFI Specifications </span>
+    </p>
+---  
+@title[UEFI Spec pic]    
+#### <p align="center"><span class="gold"  text-align: top >Latest Specifications </span>
+    </p>
+![UEFI Spec Icons](/assets/images/bgpages/bg29.png =10x) 
+
+Notes:
+- UEFI Specifications v2.7A (9/2017)
+- ACPI Specification v6.2 (5/2017)
+- UEFI Shell Specification v2.2 (1/2016)
+- PI Packaging Specification v1.1 (1/2016)
+- UEFI PI Specification v1.6 (5/2017)
+
+
+
+
+---
+
 
 ### Go for it.
 ### Just add <span class="gold">PITCHME.md</span> ;)
