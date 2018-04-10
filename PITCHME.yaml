@@ -4,4 +4,4 @@ background : assets/images/wallpaper.jpg
 logo : assets/images/TianocoreLogo.png
 transition : none
 published : yes
-footnote: "<font color: #e49436; >*</font> <a style='text-decoration:none; color: white;' href='http://www.tianocore.org'>Tianocore.org</a>"
+footnote: "<a style='text-decoration:none; color: gold;' href='http://www.tianocore.org'>Tianocore.org</a>"
