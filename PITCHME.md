@@ -443,6 +443,7 @@ Platform Initialization (PI) & UEFI w/ EDK <Br>
 +++
 @title[Intel FSP Producer-continue]
 ##### <p align="center"<span class="gold"  text-align: top >Intel® FSP  - Producer </span></p>
+<p align="center"<span style="color:white; font-size:0.5em"> - Continue </span></p>
 
 <span style="margin-top: -1px; margin-bottom: -1px">
 <ul>
