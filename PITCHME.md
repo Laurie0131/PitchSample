@@ -122,18 +122,17 @@ Done!
 <img src=https://github.com/Laurie0131/PitchSample/blob/master/assets/images/bootflow.JPG width="425"/></p>
 -->
 
-<span style="color:gray; font-size:0.5em"> <b>UEFI Boot Execution Flow</b> </span>
+<p align="center"><span style="color:gray; font-size:0.5em"> <b>UEFI Boot Execution Flow</b> </span>
 
 ---
 @title[UEFI Boot Flow Sec]
 #### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span></p>
-##### - SEC phase
+<p align="center"><span style="color:gray; font-size:0.5em"> <b>SEC Phase</b> </span>
 ![UEFI Boot Execution Flow](/assets/images/bgpages/bg4.png =100x)
-<span style="color:gray; font-size:0.5em">The <b>SEC</b> phase </span>
+
 
 Note:
-SEC 
-Function <Br>
+SEC Function <Br>
           Consumes the Reset vector on IA
 Serving as the root of trust in the system
 Initial code that takes control of the system
@@ -145,12 +144,12 @@ Initialize PEI temporary memory NEM / CAR
 Transfer control to PEI Core
 
 SEC will have Platform specific functions
--AP waking stub
--Early microcode update
--Collect BIST (Built-in Self Test)
--Other charactistics of SEC   
--         Executed in place from flash
--          Written in assembly (16-bit & 32-bit)
+- AP waking stub
+- Early microcode update
+- Collect BIST (Built-in Self Test)
+- Other charactistics of SEC   
+  - Executed in place from flash
+  - Written in assembly (16-bit & 32-bit)
 
 -A Firmware Volume (FV) is a logical firmware device. The basic storage <br>
 repository for data and/or code is the firmware volume. Each firmware volume is organized into a
