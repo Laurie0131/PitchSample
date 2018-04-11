@@ -526,7 +526,7 @@ Notes:
 </span><br>
 <span style="color:#FFFF00"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">Answer: Where does Intel® FSP Fit? 
 </span> <br>
-<span style="color:#FF6600"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">What’s new in UEFI.org
+<span style="color:#FFFF99"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">What’s new in UEFI.org
 </span> 
 	
 ---
