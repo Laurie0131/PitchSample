@@ -496,26 +496,25 @@ Notes:
 <p align="Left"><span style="color:#e49436; font-size:0.7em"> UEFI Development Kit (UDK) releases are stable, validated snapshots of EDK II  </span> </p>
 <div class="left">
      <ul>
-        <li><span style="font-size:0.7em">Industry Standards & Public Specifications</span> </li>
+        <li><span style="font-size:0.5em">Industry Standards & Public Specifications</span> </li>
         <ul>
           <li><span style="font-size:0.5em">UEFI 2.7</span></li>
           <li><span style="font-size:0.5em">UEFI PI 1.6</span></li>
           <li><span style="font-size:0.5em">ACPI 6.2</span></li>
         </ul>
-        <li><span style="font-size:0.7em">Centralized Config Management </span></li>
-        <li><span style="font-size:0.7em">IOMMU-based DMA Protection</span></li>
-        <li><span style="font-size:0.7em">Stack Guard, Heap Guard and NULL Pointer Detection</span></li>
-        
+        <li><span style="font-size:0.5em">Centralized Config Management </span></li>
+        <li><span style="font-size:0.5em">IOMMU-based DMA Protection</span></li>
+        <li><span style="font-size:0.5em">Stack Guard, Heap Guard and NULL Pointer Detection</span></li>
     </ul>
 </div>
 <div class="right">
     <ul>
-        <li><span style="font-size:0.7em">Compilers / Tools</span></li>
-        <li><span style="font-size:0.7em">Microsoft Visual Studio 2017 tool chain</span></li>
-        <li><span style="font-size:0.7em">Hash-based incremental build</span></li>
-        <li><span style="font-size:0.7em">Build time improvement using multi-threading in GenFds to generate FFS files</span></li>
-        <li><span style="font-size:0.7em">More Info: 
-		<a href="https://github.com/tianocore/tianocore.github.io/wiki/UDK2018#edk-ii-specification-for-udk2018">TianoCore Wiki</a></span></li>
+        <li><span style="font-size:0.5em">Compilers / Tools</span></li>
+        <li><span style="font-size:0.5em">Microsoft Visual Studio 2017 tool chain</span></li>
+        <li><span style="font-size:0.5em">Hash-based incremental build</span></li>
+        <li><span style="font-size:0.5em">Build time improvement using multi-threading in GenFds to generate FFS files</span></li>
+        <li><span style="font-size:0.5em">More Info: 
+	<a href="https://github.com/tianocore/tianocore.github.io/wiki/UDK2018#edk-ii-specification-for-udk2018">TianoCore Wiki UDK2018 </a></span></li>
     </ul>
 </div>
 
