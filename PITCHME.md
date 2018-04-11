@@ -566,7 +566,8 @@ Notes:
 ##### <p align="center"<span class="gold"  text-align: top >Acknowledgements</span></p>
 
 ```
-Redistribution and use in source (original document form) and 'compiled‘ forms (converted to PDF, epub, HTML and other formats) with or without modification, are permitted provided that the following conditions are met:<br>
+Redistribution and use in source (original document form) and 'compiled‘ forms (converted to PDF, epub, HTML and other formats) with or 
+without modification, are permitted provided that the following conditions are met:
 
 Redistributions of source code (original document form) must retain the above copyright notice, this list of conditions and the
 following disclaimer as the first lines of this file unmodified.<br>
