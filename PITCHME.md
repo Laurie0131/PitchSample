@@ -126,7 +126,11 @@ Done!
 </span> <br>
 <span style="color:#FFFF99"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">&nbsp;&nbsp;What’s new in UEFI.org
 </span> 
-	
+---
+@title[UEFI Boot Flow Section]
+#### UEFI Boot Execution Flow
+<span style="font-size:0.75em" > Starting at the processor reset vector </span>
+
 ---
 @title[UEFI Boot Flow]
 #### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span></p>
