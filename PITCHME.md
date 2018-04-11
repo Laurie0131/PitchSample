@@ -520,13 +520,13 @@ Notes:
 ---  
 @title[Summary]
 ##### <p align="center"<span class="gold"  text-align: top >Summary </span></p>
-<span style="color:red;"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">Review PI and UEFI Boot Process
+<span style="color:#FF00FF;"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">Review PI and UEFI Boot Process
  </span><br>
-<span style="color:blue;"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">Answer web-based training related questions
+<span style="color:#00FFFF;"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">Answer web-based training related questions
 </span><br>
-<span style="color:green"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">Answer: Where does Intel® FSP Fit? 
+<span style="color:#FFFF00"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">Answer: Where does Intel® FSP Fit? 
 </span> <br>
-<span style="color:yellow"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">What’s new in UEFI.org
+<span style="color:#FF6600"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">What’s new in UEFI.org
 </span> 
 	
 ---
