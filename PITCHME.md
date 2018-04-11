@@ -490,6 +490,35 @@ Notes:
 <p align="center"<span style="color:white; font-size:0.3em"> <a href="http://www.uefi.org/">UEFI Specification</a> -top &nbsp;&nbsp;&nbsp;&nbsp; & &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.tiancore.org/">EDK II Open Source</a> -bottom </span></p>
 ![UEFI & EDK II Timeline](/assets/images/bgpages/bg30.png =10x)
 
+---  
+@title[UDK2018]    
+<p align="center"><span style="color:#e49436; font-size:0.75em"> UDK2018: Key Features - Q2 2018</span> </p>
+<p align="Left"><span style="color:#e49436; font-size:0.5em"> UEFI Development Kit (UDK) releases are stable, validated snapshots of EDK II  </span> </p>
+<div class="left">
+     <ul>
+        <li>Industry Standards & Public Specifications
+        <ul>
+          <li>UEFI 2.7</li>
+          <li>UEFI PI 1.6</li>
+          <li>ACPI 6.2</li>
+        </ul>
+        <li>Centralized Config Management </li>
+        <li>IOMMU-based DMA Protection</li>
+        <li>Stack Guard, Heap Guard and NULL Pointer Detection</li>
+        
+    </ul>
+</div>
+<div class="right">
+    <ul>
+        <li>Compilers / Tools</li>
+        <li>Microsoft Visual Studio 2017 tool chain</li>
+        <li>Hash-based incremental build</li>
+        <li>Build time improvement using multi-threading in GenFds to generate FFS files</li>
+        <li>More Info: 
+		<a href="https://github.com/tianocore/tianocore.github.io/wiki/UDK2018#edk-ii-specification-for-udk2018">TianoCore Wiki</a></li>
+    </ul>
+</div>
+
 
 ---
 
