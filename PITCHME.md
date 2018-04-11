@@ -111,9 +111,10 @@ Done!
 </div>
 ---  
 @title[Title-UEFI Overview]
-### <p align="center"<span class="gold"  text-align: top >UEFI & EDK II Training</span></p>
+### UEFI & EDK II Training
 #### UEFI and Platform Initialization (PI) Overview
-##### <a style='text-decoration:none; color: #e49436;' href='http://www.tianocore.org'>tianocore.org</a>
+<span style="font-size:0.75em" ><a href='http://www.tianocore.org'>tianocore.org</a></span>
+
 ---  
 @title[Lesson Objective]
 ##### <p align="center"<span class="gold"  text-align: top >Lesson Objective</span></p>
