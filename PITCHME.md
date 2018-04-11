@@ -520,13 +520,13 @@ Notes:
 ---  
 @title[Summary]
 ##### <p align="center"<span class="gold"  text-align: top >Summary </span></p>
-<i class="fa fa-certificate fa-1x" aria-hidden="true"> </i><span style="font-size:0.5em">Review PI and UEFI Boot Process
- </span>
-<i class="fa fa-certificate fa-1x" aria-hidden="true"> </i><span style="font-size:0.5em">Answer web-based training related questions
-</span>
-<i class="fa fa-certificate fa-1x" aria-hidden="true"> </i><span style="font-size:0.5em">Answer: Where does Intel® FSP Fit? 
-</span> 
-<i class="fa fa-certificate fa-1x" aria-hidden="true"> </i><span style="font-size:0.5em">What’s new in UEFI.org
+<span style="color:#e49436;"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.5em">Review PI and UEFI Boot Process
+ </span><br>
+<span style="color:#e49436;"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.5em">Answer web-based training related questions
+</span><br>
+<span style="color:#e49436;"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.5em">Answer: Where does Intel® FSP Fit? 
+</span> <br>
+<span style="color:#e49436;"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.5em">What’s new in UEFI.org
 </span> 
 	
 ---
