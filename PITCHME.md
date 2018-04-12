@@ -54,11 +54,12 @@ May choose to authenticate the PEI Foundation
 
 
 +++
-@title[UEFI Boot Flow Sec -1 ]
+@title[SEC - characteristics ]
 #### <p align="center"><span class="gold"  text-align: top >Processor Executes SEC starting at the reset vector </span></p>
-- SEC Consumes the Reset vector Serving as the root of trust 
+- SEC Consumes the Reset vector 
+- Serving as the root of trust 
 - May choose to authenticate the PEI Foundation
-- AP waking stub
+- Init the APs waking stub
 - Early microcode update
 - Collect BIST (Built-in Self Test)
 - Other charactistics of SEC   
@@ -84,7 +85,7 @@ SEC will have Platform specific functions
   - Executed in place from flash
   - Written in assembly (16-bit & 32-bit)
 +++
-@title[UEFI Boot Flow Sec -2 ]
+@title[SEC - Firmware Terms ]
 #### <p align="center"><span class="gold"  text-align: top >Terms to know about the Flash Device </span></p>
 - Firmware Volume (FV) 
   - The basic storage with a firmware device
@@ -132,7 +133,7 @@ Core set of services (PeiServices), PEIM to PEIM Interfaces (PPIs), and simple N
 
 
 ---
-@title[UEFI Boot Flow PEI-Hobs]
+@title[UEFI Boot Flow PEI-DXEIPL  & Hobs ]
 #### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>Hobs</b> </span></p>
 
 ![UEFI Boot Execution Flow](/assets/images/bgpages/bg5.png =10x)
@@ -142,12 +143,13 @@ Note:
 PEI - Hobs <Br>
 Transition to DXE :
 - HOBS  – a series of data structures in memory, created during PEI, that describe platform features, configuration, or data. HOBs are produced during PEI, and read-only during DXE (consumer). 
-
-- **DXE IPL** 
++++
+@title[UEFI Boot Flow PEI-DXEIPL ]
+#### <p align="center"><span class="gold"  text-align: top >DXE IPL Characteristics   </span>
 - No hard coded addresses allowed
 - Find Largest Physical Memory HOB
-  - Ideally this should be near Top Of Memory (TOM)
-  - Allocate DXE Stack from Top of Memory
+   - Ideally this should be near Top Of Memory (TOM)
+   - Allocate DXE Stack from Top of Memory
 - Build HOB that describes DXE Stack
 - Search FVs from HOB List for DXE Core
 - Load DXE Core into Memory (PE/COFF)
@@ -166,13 +168,23 @@ DXE <Br>
 
 Works after system memory has been discovered and initialized
 DXE drivers are typically stored in flash in compressed form and must be decompressed into memory before execution
-
-- Responsibility for DXE Core 
-- Consumes HOB List
++++
+@title[DXE Characteristics]
+#### <p align="center"><span class="gold"  text-align: top >DXE Characteristics & Responsibilities  </span>
+- Consumes HOB List from PEI
 - Builds UEFI and DXE Service Tables  
 - EFI System Table
-- UEFI Boot Services Table
-- UEFI Runtime Services Table
+- UEFI Boot Services Table & UEFI Runtime Services Table
+- Hands off control to the DXE Dispatcher
+- and more  . . . 
+	
+
+Note:
+DXE Characteristics
+- Consumes HOB List from PEI
+- Builds UEFI and DXE Service Tables  
+- EFI System Table
+- UEFI Boot Services Table & UEFI Runtime Services Table
 - DXE Services Table
 - Makes Memory-Only Boot Services Available that will be in memory until ExitBootServices()
 - Hands off control to the DXE Dispatcher
@@ -315,7 +327,6 @@ Device Path and Global Variables<Br>
 The use of device paths allows the system resources to be defined in terms of connections between hardware devices, and the “pathways” the processor must follow to get to those devices.  
 
 This includes the pathway to a specific boot device.
-(NOTE: This slide REALLY has to be seen as a build slide, each step is very important in the overall under standing of the process.  However, the animation (line change from RED to black and back is not necessary and not included in this breakdown)
 
 In the Example: 
 The Boot target is the OS loader UEFI Application located on the third partition of the Master drive on the primary ATA controller off of the PCI Device 1Fh, function #1, off of the primary PCI host bridge (Bus zero).   This is how we would refer to this target, starting form the target working back to the processor, in UEFI, the target is defined starting from the processor, as devices are discovered and drivers are loaded in the boot process.  
