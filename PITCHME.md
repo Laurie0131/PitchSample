@@ -109,7 +109,7 @@ Done!
         <li>SVG Image Support</li>
     </ul>
 </div>
----  
+---?image=assets/images/gitpitch-audience.jpg
 @title[Title-UEFI Overview]
 ## <span class="gold"  text-align: top >UEFI & EDK II Training</span>
 #### UEFI and Platform Initialization (PI) Overview
