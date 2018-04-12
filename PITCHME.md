@@ -488,6 +488,9 @@ Platform Initialization (PI) & UEFI w/ EDK <Br>
 - This includes hardware initialization code that is EDK II based PEI Modules (PEIM’s))
 - Modules are encapsulated as a UEFI PI firmware volume 		w/ extra header)
 - Configure w/Vital Product Data (VPD)-style Platform 		Configuration Data (PCD) externalized from the modules
++++
+@title[Intel FSP Producer- Continued]
+##### <p align="center"<span class="gold"  text-align: top >Intel® FSP  - Producer </span><span<span style="font-size:0.75em"> -Continued </span></p>
 - Resultant output state reported via UEFI Platform 		Initialization (PI) Hand Off Block (HOB)
 - <a href="http://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/fsp-architecture-spec-v2.pdf"> Intel® Firmware Support Package (Intel® FSP) External Architecture Specification (EAS) v2.0 PDF </a>
 - Resource: https://firmware.intel.com/blog/open-source-platforms-edkii-using-intel-fsp
@@ -574,7 +577,7 @@ Notes:
 
 ---
 @title[FSP detail 1]
-<span style="font-size:0.75em">Intel® FSP V2.0 Boot Flow</span> 
+<p align="center"<span style="font-size:0.8em">Intel® FSP V2.0 Boot Flow</span> </p>
 ![FSP-Detail-1](/assets/images/bgpages/bg48_1.png =10x) 
 <span style="font-size:0.5em"> Whitpaper:Using Intel® FSP with EDK II: <a href="https://firmware.intel.com/sites/default/files/A_Tour_Beyond_BIOS_Using_the_Intel_Firmware_Support_Package_with_the_EFI_Developer_Kit_II_(FSP2.0).pdf "> PDF</a><br>
    </span> 
@@ -630,7 +633,7 @@ https://github.com/mangguo321/Braswell/raw/master/Documents/Open_Braswell_Platfo
 # WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS 
 # DOCUMENTATION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br>
 #
-#Copyright (c) 2018, Intel Corporation. All rights reserved.
+# Copyright (c) 2018, Intel Corporation. All rights reserved.
 ```
 
 
