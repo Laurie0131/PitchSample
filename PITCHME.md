@@ -134,7 +134,7 @@ Core set of services (PeiServices), PEIM to PEIM Interfaces (PPIs), and simple N
 
 ---
 @title[UEFI Boot Flow PEI-DXEIPL  & Hobs ]
-#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>Hobs</b> </span></p>
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">-&nbsp;<b>Hobs DXEIPL</b> </span></p>
 
 ![UEFI Boot Execution Flow](/assets/images/bgpages/bg5.png =10x)
 
@@ -246,7 +246,7 @@ Created in DXE and is the pointer to everything in the system
 
 ---
 @title[UEFI Boot Flow DXE- UEFI Drivers]
-#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>DXE</b> </span></p>
+#### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;-&nbsp;<b>DXE UEFI</b> </span></p>
 
 ![UEFI Boot Execution Flow](/assets/images/bgpages/bg8.png =10x)
 
@@ -741,10 +741,4 @@ https://github.com/mangguo321/Braswell/raw/master/Documents/Open_Braswell_Platfo
 
 
 
----
 
-
-### Go for it.
-### Just add <span class="gold">PITCHME.md</span> ;)
-<br>
-[Click here to learn more @fa[external-link fa-pad-left]](https://github.com/gitpitch/gitpitch/wiki)
