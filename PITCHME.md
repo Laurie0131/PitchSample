@@ -119,13 +119,13 @@ Done!
 ---  
 @title[Lesson Objective]
 ##### <p align="center"<span class="gold"  text-align: top >Lesson Objective</span></p><br>
-<span style="color:#00CC99;"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">&nbsp;&nbsp;Review PI and UEFI Boot Process
+<span style="color:#00CC99;"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.9em">&nbsp;&nbsp;Review PI and UEFI Boot Process
  </span><br><br>
-<span style="color:#00FFFF;"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">&nbsp;&nbsp;Answer web-based training related questions
+<span style="color:#00FFFF;"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.9em">&nbsp;&nbsp;Answer web-based training related questions
 </span><br><br>
-<span style="color:#FFFF00"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">&nbsp;&nbsp;Answer: Where does Intel® FSP Fit? 
+<span style="color:#FFFF00"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.9em">&nbsp;&nbsp;Answer: Where does Intel® FSP Fit? 
 </span> <br><br>
-<span style="color:#FFFF99"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">&nbsp;&nbsp;What’s new in UEFI.org
+<span style="color:#FFFF99"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.9em">&nbsp;&nbsp;What’s new in UEFI.org
 </span> 
 
 ---?image=assets/images/binary-strings-black2.jpg
@@ -479,6 +479,18 @@ Platform Initialization (PI) & UEFI w/ EDK <Br>
  <li> 	<p style="margin-top: -1px; margin-bottom: -1px"><span style="color:white; font-size:0.75em">Resource: https://firmware.intel.com/blog/open-source-platforms-edkii-using-intel-fsp</span></li>
 </ul>
 </span>
+---
+@title[Intel FSP Producer]
+##### <p align="center"<span class="gold"  text-align: top >Intel® FSP  - Producer </span></p>
+
+
+- Examples of binary instances on http://www.intel.com/fsp 		with integration guides 
+- This includes hardware initialization code that is EDK II based PEI Modules (PEIM’s)
+- Modules are encapsulated as a UEFI PI firmware volume 		w/ extra header
+- Configure w/Vital Product Data (VPD)-style Platform 		Configuration Data (PCD) externalized from the modules
+- Resultant output state reported via UEFI Platform 		Initialization (PI) Hand Off Block (HOB)
+- <a href="http://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/fsp-architecture-spec-v2.pdf">Intel® Firmware Support Package (Intel® FSP) External Architecture Specification (EAS) v2.0 PDF
+- Resource: https://firmware.intel.com/blog/open-source-platforms-edkii-using-intel-fsp
 
 ---
 @title[Intel FSP Source]
@@ -543,13 +555,13 @@ Notes:
 ---  
 @title[Summary]
 ##### <p align="center"<span class="gold"  text-align: top >Summary </span></p><br>
-<span style="color:#00CC99;"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">&nbsp;&nbsp;Review PI and UEFI Boot Process
+<span style="color:#00CC99;"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.9em">&nbsp;&nbsp;Review PI and UEFI Boot Process
  </span><br><br>
-<span style="color:#00FFFF;"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">&nbsp;&nbsp;Answer web-based training related questions
+<span style="color:#00FFFF;"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.9em">&nbsp;&nbsp;Answer web-based training related questions
 </span><br><br>
-<span style="color:#FFFF00"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">&nbsp;&nbsp;Answer: Where does Intel® FSP Fit? 
+<span style="color:#FFFF00"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.9em">&nbsp;&nbsp;Answer: Where does Intel® FSP Fit? 
 </span> <br><br>
-<span style="color:#FFFF99"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">&nbsp;&nbsp;What’s new in UEFI.org
+<span style="color:#FFFF99"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.9em">&nbsp;&nbsp;What’s new in UEFI.org
 </span> 
 
 ---?image=assets/images/gitpitch-audience.jpg
