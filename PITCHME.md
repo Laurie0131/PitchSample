@@ -453,23 +453,17 @@ Platform Initialization (PI) & UEFI w/ EDK <Br>
 ##### <p align="center"<span class="gold"  text-align: top >Intel® FSP  - Producer </span></p>
 
 
-@[1](<BR> 
 - Examples of binary instances on http://www.intel.com/fsp 		with integration guides<br>  
 - This includes hardware initialization code that is EDK II based PEI Modules (PEIM’s)<BR>
 - Modules are encapsulated as a UEFI PI firmware volume 		w/ extra header<BR>
-- Configure w/Vital Product Data (VPD)-style Platform 		Configuration Data (PCD) externalized from the modules)
-
-<!---
-   
-       @title[Intel FSP Producer- Continued]
-       ##### <p align="center"<span class="gold"  text-align: top >Intel® FSP  - Producer </span><span<span style="color:white; font-size:0.7em"> -Continued </span></p>
+- Configure w/Vital Product Data (VPD)-style Platform 		Configuration Data (PCD) externalized from the modules
++++
+@title[Intel FSP Producer- Continued]
+##### <p align="center"<span class="gold"  text-align: top >Intel® FSP  - Producer </span><span<span style="color:white; font-size:0.7em"> -Continued </span></p>
 <BR>
-
--->
-@[2]( <br>
 - Resultant output state reported via UEFI Platform 		Initialization (PI) Hand Off Block (HOB)<BR>
 - <a href="http://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/fsp-architecture-spec-v2.pdf"> Intel® Firmware Support Package (Intel® FSP) External Architecture Specification (EAS) v2.0 PDF </a><BR>
-- Resource: https://firmware.intel.com/blog/open-source-platforms-edkii-using-intel-fsp)
+- Resource: https://firmware.intel.com/blog/open-source-platforms-edkii-using-intel-fsp
 
 ---
 @title[Intel FSP Source]
