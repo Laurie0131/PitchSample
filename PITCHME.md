@@ -466,7 +466,7 @@ Platform Initialization (PI) & UEFI w/ EDK <Br>
 +++
 @title[Intel FSP Producer-continue]
 ##### <p align="center"<span class="gold"  text-align: top >Intel® FSP  - Producer </span></p>
-<p align="center"<span style="color:white; font-size:0.5em"> - Continue </span></p>
+<p align="center"<span style="color:white; font-size:0.75em"> - Continued </span></p>
 
 <span style="margin-top: -1px; margin-bottom: -1px">
 <ul>
@@ -484,13 +484,13 @@ Platform Initialization (PI) & UEFI w/ EDK <Br>
 ##### <p align="center"<span class="gold"  text-align: top >Intel® FSP  - Producer </span></p>
 
 
-- Examples of binary instances on http://www.intel.com/fsp 		with integration guides 
-- This includes hardware initialization code that is EDK II based PEI Modules (PEIM’s)
-- Modules are encapsulated as a UEFI PI firmware volume 		w/ extra header
-- Configure w/Vital Product Data (VPD)-style Platform 		Configuration Data (PCD) externalized from the modules
-- Resultant output state reported via UEFI Platform 		Initialization (PI) Hand Off Block (HOB)
-- <a href="http://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/fsp-architecture-spec-v2.pdf">Intel® Firmware Support Package (Intel® FSP) External Architecture Specification (EAS) v2.0 PDF
-- Resource: https://firmware.intel.com/blog/open-source-platforms-edkii-using-intel-fsp
+@[1](- Examples of binary instances on http://www.intel.com/fsp 		with integration guides )
+@[1](- This includes hardware initialization code that is EDK II based PEI Modules (PEIM’s))
+@[1](- Modules are encapsulated as a UEFI PI firmware volume 		w/ extra header)
+@[1](- Configure w/Vital Product Data (VPD)-style Platform 		Configuration Data (PCD) externalized from the modules
+@[2](- Resultant output state reported via UEFI Platform 		Initialization (PI) Hand Off Block (HOB)
+@[2](- <a href="http://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/fsp-architecture-spec-v2.pdf"> Intel® Firmware Support Package (Intel® FSP) External Architecture Specification (EAS) v2.0 PDF </a>
+@[2](- Resource: https://firmware.intel.com/blog/open-source-platforms-edkii-using-intel-fsp
 
 ---
 @title[Intel FSP Source]
@@ -612,7 +612,7 @@ https://github.com/mangguo321/Braswell/raw/master/Documents/Open_Braswell_Platfo
 @title[Acknowledgements]
 ##### <p align="center"<span class="gold"  text-align: top >Acknowledgements</span></p>
 
-```
+```Null
 #
 # Redistribution and use in source (original document form) and 'compiled‘ forms (converted to PDF, epub, HTML and other formats) with or 
 # without modification, are permitted provided that the following conditions are met:
