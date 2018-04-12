@@ -163,6 +163,25 @@ Serving as the root of trust in the system
 Initial code that takes control of the system
 May choose to authenticate the PEI Foundation 
 
+
++++
+@title[UEFI Boot Flow Sec -1 ]
+#### <p align="center"><span class="gold"  text-align: top >Processor Executes SEC starting at the reset vector </span></p>
+- SEC Consumes the Reset vector Serving as the root of trust 
+- May choose to authenticate the PEI Foundation
+- AP waking stub
+- Early microcode update
+- Collect BIST (Built-in Self Test)
+- Other charactistics of SEC   
+    - Executed in place from flash
+    - Written in assembly (16-bit & 32-bit) on Intel Architecuture	- 
+Note:
+SEC Function <Br>
+          Consumes the Reset vector on IA
+Serving as the root of trust in the system
+Initial code that takes control of the system
+May choose to authenticate the PEI Foundation 
+
 Switch to 32-bit flat mode
 Initialize the Boot strap processor BSP
 Initialize PEI temporary memory NEM / CAR
@@ -175,12 +194,20 @@ SEC will have Platform specific functions
 - Other charactistics of SEC   
   - Executed in place from flash
   - Written in assembly (16-bit & 32-bit)
++++
+@title[UEFI Boot Flow Sec -2 ]
+#### <p align="center"><span class="gold"  text-align: top >Terms to know about the Flash Device </span></p>
+- Firmware Volume (FV) 
+  - The basic storage with a firmware device
+- Firmware File System (FFS)
+  - Describes the organization of files within a FV
 
+Notes:
 -A Firmware Volume (FV) is a logical firmware device. The basic storage <br>
 repository for data and/or code is the firmware volume. Each firmware volume is organized into a
 file system. As such, the file is the base unit of storage for firmware
 
--Firmware File System <br>
+-Firmware Volume (FV) <br>
 A firmware file system (FFS) describes the organization of files and (optionally) free space within
 the firmware volume. Each firmware file system has a unique GUID, which is used by the firmware
 to associate a driver with a newly exposed firmware volume
