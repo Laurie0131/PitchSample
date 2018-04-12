@@ -733,6 +733,8 @@ https://github.com/mangguo321/Braswell/raw/master/Documents/Open_Braswell_Platfo
  Copyright (c) 2018, Intel Corporation. All rights reserved.
 ```
 
+---?code=assets/md/Acknowledgements.md&title=Acknowledgements
+
 
 
 
