@@ -118,15 +118,16 @@ Done!
 
 ---  
 @title[Lesson Objective]
-##### <p align="center"<span class="gold"  text-align: top >Lesson Objective</span></p>
+##### <p align="center"<span class="gold"  text-align: top >Lesson Objective</span></p><br>
 <span style="color:#00CC99;"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">&nbsp;&nbsp;Review PI and UEFI Boot Process
- </span><br>
+ </span><br><br>
 <span style="color:#00FFFF;"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">&nbsp;&nbsp;Answer web-based training related questions
-</span><br>
+</span><br><br>
 <span style="color:#FFFF00"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">&nbsp;&nbsp;Answer: Where does Intel® FSP Fit? 
-</span> <br>
+</span> <br><br>
 <span style="color:#FFFF99"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">&nbsp;&nbsp;What’s new in UEFI.org
 </span> 
+
 ---?image=assets/images/binary-strings-black2.jpg
 @title[UEFI Boot Flow Section]
 #### <span class="gold"  text-align: top >UEFI Boot Execution Flow </span>
@@ -563,7 +564,7 @@ Notes:
 @title[FSP detail 1]
 <span style="font-size:0.75em">Intel® FSP V2.0 Boot Flow</span> 
 ![FSP-Detail-1](/assets/images/bgpages/bg48_1.png =10x) 
-<span style="font-size:0.5em"> Whitpaper:Using Intel® FSP with EDK II: <a href="https://firmware.intel.com/sites/default/files/A_Tour_Beyond_BIOS_Using_the_Intel_Firmware_Support_Package_with_the_EFI_Developer_Kit_II_(FSP2.0).pdf "> PDF/a>
+<span style="font-size:0.5em"> Whitpaper:Using Intel® FSP with EDK II: <a href="https://firmware.intel.com/sites/default/files/A_Tour_Beyond_BIOS_Using_the_Intel_Firmware_Support_Package_with_the_EFI_Developer_Kit_II_(FSP2.0).pdf "> PDF</a><br>
    </span> 
 <span style="font-size:0.3em"> Intel® Firmware Support Package (Intel® FSP)
    </span> 
@@ -582,8 +583,8 @@ Source https://firmware.intel.com/sites/default/files/A_Tour_Beyond_BIOS_Using_t
 
 ![FSP-Detail-2](/assets/images/bgpages/bg42_1.png =10x) 
 
-<span style="font-size:0.75em"><a href="https://github.com/mangguo321/Braswell/raw/master/Documents/Open_Braswell_Platform_Designing_Porting_Guide.pdf 
-	"> Image PDF Source</a></span>
+<span style="font-size:0.75em"> Image Source: Open Braswell Platform Desiging Porting Guide <a href="https://github.com/mangguo321/Braswell/raw/master/Documents/Open_Braswell_Platform_Designing_Porting_Guide.pdf 
+	"> PDF </a></span>
 Note:
 Open Braswell EDKII FSP
 Wrapper is responsible for communicating with Braswell FSP APIs in SEC, PEI, and
@@ -599,7 +600,8 @@ https://github.com/mangguo321/Braswell/raw/master/Documents/Open_Braswell_Platfo
 @title[Acknowledgements]
 ##### <p align="center"<span class="gold"  text-align: top >Acknowledgements</span></p>
 
-```shell
+```
+#
 # Redistribution and use in source (original document form) and 'compiled‘ forms (converted to PDF, epub, HTML and other formats) with or 
 # without modification, are permitted provided that the following conditions are met:
 #
