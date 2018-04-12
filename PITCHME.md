@@ -713,7 +713,7 @@ https://github.com/mangguo321/Braswell/raw/master/Documents/Open_Braswell_Platfo
 @title[Acknowledgements]
 ##### <p align="center"<span class="gold"  text-align: top >Acknowledgements</span></p>
 
-```
+<pre><code><em style="color: black;">
  Redistribution and use in source (original document form) and 'compiled‘ forms (converted to PDF, epub, HTML and other formats) 
  with or without modification, are permitted provided that the following conditions are met:
 
@@ -731,9 +731,8 @@ https://github.com/mangguo321/Braswell/raw/master/Documents/Open_Braswell_Platfo
  OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br>
 
  Copyright (c) 2018, Intel Corporation. All rights reserved.
-```
+</code></pre>
 
----?code=assets/md/Acknowledgements.md&title=Acknowledgements
 
 
 
