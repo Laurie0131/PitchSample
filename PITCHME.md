@@ -457,11 +457,13 @@ Platform Initialization (PI) & UEFI w/ EDK <Br>
 @[1]( This includes hardware initialization code that is EDK II based PEI Modules (PEIM’s))
 @[1]( Modules are encapsulated as a UEFI PI firmware volume 		w/ extra header)
 @[1]( Configure w/Vital Product Data (VPD)-style Platform 		Configuration Data (PCD) externalized from the modules)
-<!---+++
+<!---
+   
 @title[Intel FSP Producer- Continued]
 ##### <p align="center"<span class="gold"  text-align: top >Intel® FSP  - Producer </span><span<span style="color:white; font-size:0.7em"> -Continued </span></p>
 <BR>
---->
+
+-->
 @[2]( Resultant output state reported via UEFI Platform 		Initialization (PI) Hand Off Block (HOB))
 @[2]( <a href="http://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/fsp-architecture-spec-v2.pdf"> Intel® Firmware Support Package (Intel® FSP) External Architecture Specification (EAS) v2.0 PDF </a>)
 @[2]( Resource: https://firmware.intel.com/blog/open-source-platforms-edkii-using-intel-fsp)
