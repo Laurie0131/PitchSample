@@ -202,7 +202,7 @@ SEC will have Platform specific functions
 - Firmware File System (FFS)
   - Describes the organization of files within a FV
 
-Notes:
+Note:
 -A Firmware Volume (FV) is a logical firmware device. The basic storage <br>
 repository for data and/or code is the firmware volume. Each firmware volume is organized into a
 file system. As such, the file is the base unit of storage for firmware
