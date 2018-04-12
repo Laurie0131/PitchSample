@@ -511,7 +511,7 @@ See: <a href="https://firmware.intel.com/learn/fsp/about-intel-fsp"> About Intel
 White Paper Example: <a href="https://github.com/mangguo321/Braswell/blob/master/Documents/Open_Braswell_Platform_Designing_Porting_Guide.pdf">
 Open Braswell - Design and Porting Guide</a></span></p>
 
-Notes:
+Note:
 The Intel® Firmware Support Package (Intel® FSP) is a royalty-free option for initializing Intel silicon, designed for integration into a boot loader of the developer's choice. It is easy to adopt, is scalable to design, reduces time to market, and is economical to build. Intel FSP provides a binary package to initialize the processor, memory controller, and Intel® chipset initialization functions.
 Intel FSP is designed for integration into a variety of boot loaders, including coreboot and TianoCore (open source Unified Extensible Firmware Interface [UEFI]).
 
