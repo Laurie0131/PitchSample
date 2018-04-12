@@ -597,7 +597,7 @@ Platform Initialization (PI) & UEFI w/ EDK <Br>
   - <a href="https://github.com/tianocore/edk2/tree/master/MdeModulePkg"> /MdeModulePkg </a>
 - And the code to create the Intel FSP interfaces can be found at 
    - <a href="https://github.com/tianocore/edk2/tree/master/IntelFsp2Pkg"> /IntelFsp2Pkg </a>
-Notes:
+Note:
 
 All of the public FSP’s are ‘EDK2-based’.   This package is the alignment of producing FSP’s going forward w/ aligned code.  This is the silicon reference code which is currently NDA – memory init PEIM + PCH init + uncore init.  It is a subset of the silicon pieces we have today.  Today’s RC is the superset.  Align customization over time.
 
@@ -612,7 +612,7 @@ Talking point – anyone would could be producer.  IBV could.  Just worry about 
 #### <p align="center"><span class="gold"  text-align: top >Latest Specifications </span> </p>
 ![UEFI Spec Icons](/assets/images/bgpages/bg29.png =10x) 
 
-Notes:
+Note:
 - UEFI Specifications v2.7A (9/2017)
 - ACPI Specification v6.2 (5/2017)
 - UEFI Shell Specification v2.2 (1/2016)
@@ -713,10 +713,9 @@ https://github.com/mangguo321/Braswell/raw/master/Documents/Open_Braswell_Platfo
 @title[Acknowledgements]
 ##### <p align="center"<span class="gold"  text-align: top >Acknowledgements</span></p>
 
-<pre>
-
- Redistribution and use in source (original document form) and 'compiled‘ forms (converted to PDF, epub, HTML and other formats) with or 
- without modification, are permitted provided that the following conditions are met:
+```
+ Redistribution and use in source (original document form) and 'compiled‘ forms (converted to PDF, epub, HTML and other formats) 
+ with or without modification, are permitted provided that the following conditions are met:
 
  Redistributions of source code (original document form) must retain the above copyright notice, this list of conditions and the
  following disclaimer as the first lines of this file unmodified.<br>
@@ -725,15 +724,14 @@ https://github.com/mangguo321/Braswell/raw/master/Documents/Open_Braswell_Platfo
  distribution.
 
  THIS DOCUMENTATION IS PROVIDED BY TIANOCORE PROJECT "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL TIANOCORE PROJECT BE LIABLE 
- FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,  BUT NOT LIMITED TO, PROCUREMENT OF 
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, 
- WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS 
- DOCUMENTATION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br>
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL TIANOCORE PROJECT 
+ BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,  BUT NOT LIMITED TO, 
+ PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY 
+ THEORY OF LIABILITY,  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT 
+ OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br>
 
  Copyright (c) 2018, Intel Corporation. All rights reserved.
-
-</pre>
+```
 
 
 
