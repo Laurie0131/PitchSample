@@ -713,7 +713,7 @@ https://github.com/mangguo321/Braswell/raw/master/Documents/Open_Braswell_Platfo
 @title[Acknowledgements]
 ##### <p align="center"<span class="gold"  text-align: top >Acknowledgements</span></p>
 
-<pre><code><em style="color: black;">
+<pre><code>
  Redistribution and use in source (original document form) and 'compiled‘ forms (converted to PDF, epub, HTML and other formats) 
  with or without modification, are permitted provided that the following conditions are met:
 
