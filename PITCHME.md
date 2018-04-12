@@ -127,7 +127,7 @@ Done!
 </span> <br>
 <span style="color:#FFFF99"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">&nbsp;&nbsp;What’s new in UEFI.org
 </span> 
----
+---?image=assets/images/binary-strings-black2.jpg
 @title[UEFI Boot Flow Section]
 #### <span class="gold"  text-align: top >UEFI Boot Execution Flow </span>
 <span style="font-size:0.75em" > Starting at the processor reset vector </span>
@@ -371,7 +371,7 @@ Legacy boot with CSM<Br>
 Note:
 Legacy boot with CSM<Br>
 
----
+---?image=assets/images/binary-strings-black2.jpg
 @title[Intel FSP Section]
 #### <p align="center"><span class="gold"  text-align: top >The Intel® Firmware Support Package <BR> (Intel® FSP)
 </span>
@@ -490,7 +490,7 @@ Platform Initialization (PI) & UEFI w/ EDK <Br>
    - <a href="https://github.com/tianocore/edk2/tree/master/IntelFsp2Pkg"> /IntelFsp2Pkg </a>
 
 
----  
+---?image=assets/images/binary-strings-black2.jpg  
 @title[Whats New in UEFI Section]    
 #### <p align="center"><span class="gold"  text-align: top >What's new in the UEFI Specifications </span> </p>
 ---  
@@ -541,16 +541,17 @@ Notes:
 </div>
 ---  
 @title[Summary]
-##### <p align="center"<span class="gold"  text-align: top >Summary </span></p>
+##### <p align="center"<span class="gold"  text-align: top >Summary </span></p><br>
 <span style="color:#00CC99;"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">&nbsp;&nbsp;Review PI and UEFI Boot Process
- </span><br>
+ </span><br><br>
 <span style="color:#00FFFF;"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">&nbsp;&nbsp;Answer web-based training related questions
-</span><br>
+</span><br><br>
 <span style="color:#FFFF00"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">&nbsp;&nbsp;Answer: Where does Intel® FSP Fit? 
-</span> <br>
+</span> <br><br>
 <span style="color:#FFFF99"> <i class="fa fa-certificate fa-1x" aria-hidden="true"> </i></span> <span style="font-size:0.75em">&nbsp;&nbsp;What’s new in UEFI.org
 </span> 
----  
+
+---?image=assets/images/gitpitch-audience.jpg
 @title[Questions]
 ![Questions](/assets/images/bgpages/bg44_1.png =10x) 
 
@@ -560,12 +561,34 @@ Notes:
 
 ---
 @title[FSP detail 1]
+<span style="font-size:0.75em">Intel® FSP V2.0 Boot Flow</span> 
 ![FSP-Detail-1](/assets/images/bgpages/bg48_1.png =10x) 
+<span style="font-size:0.5em"> Whitpaper:Using Intel® FSP with EDK II: <a href="https://firmware.intel.com/sites/default/files/A_Tour_Beyond_BIOS_Using_the_Intel_Firmware_Support_Package_with_the_EFI_Developer_Kit_II_(FSP2.0).pdf "> PDF/a>
+   </span> 
+<span style="font-size:0.3em"> Intel® Firmware Support Package (Intel® FSP)
+   </span> 
+	
+Note:
+The Intel® Firmware Support Package (Intel® FSP) [FSP] provides key programming information for initializing Intel silicon and can be easily integrated into a firmware boot environment of the developer’s choice. 
+Different Intel hardware devices may have different Intel FSP binary instances, so a platform user needs to choose the right Intel FSP binary release. The FSP binary should be independent of the platform design but specific to the Intel CPU and chipset complex. We refer to the entities that create the FSP binary as the “FSP Producer” and the developer who integrates the FSP into some platform firmware as the “FSP Consumer.” 
+Despite the variability of the FSP binaries, the FSP API caller (aka FSP consumer) could be a generic module to invoke the 5 APIs defined in FSP EAS (External Architecture Specification) to finish silicon initialization. [FSP EAS] 
+The flow below describes the FSP, with the FSP binary from the “FSP Producer” in green and the platform code that integrates the binary, or the “FSP Consumer”, in blue. 
+
+Source https://firmware.intel.com/sites/default/files/A_Tour_Beyond_BIOS_Using_the_Intel_Firmware_Support_Package_with_the_EFI_Developer_Kit_II_%28FSP2.0%29.pdf 
 
 ---
 @title[FSP detail 2]
+<span style="font-size:0.75em">The following diagram illustrates the high level boot flow</span>
 
 ![FSP-Detail-2](/assets/images/bgpages/bg42_1.png =10x) 
+
+<span style="font-size:0.75em"><a href="https://github.com/mangguo321/Braswell/raw/master/Documents/Open_Braswell_Platform_Designing_Porting_Guide.pdf 
+	"> Image PDF Source</a></span>
+Note:
+Open Braswell EDKII FSP
+Wrapper is responsible for communicating with Braswell FSP APIs in SEC, PEI, and
+BDS phase
+https://github.com/mangguo321/Braswell/raw/master/Documents/Open_Braswell_Platform_Designing_Porting_Guide.pdf 
 
 ---
 @title[Logo Slide]
