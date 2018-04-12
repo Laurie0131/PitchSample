@@ -247,6 +247,29 @@ Transition to DXE :
 
 Note:
 DXE <Br>
+
+Works after system memory has been discovered and initialized
+DXE drivers are typically stored in flash in compressed form and must be decompressed into memory before execution
+
+- Responsibility for DXE Core 
+- Consumes HOB List
+- Builds UEFI and DXE Service Tables  
+- EFI System Table
+- UEFI Boot Services Table
+- UEFI Runtime Services Table
+- DXE Services Table
+- Makes Memory-Only Boot Services Available that will be in memory until ExitBootServices()
+- Hands off control to the DXE Dispatcher
+- Requires access to Firmware Volumes
+- Requires LoadImage(), StartImage(), Exit()
+- DXE Drivers will build the Architectural Protocols
+- May require decompression service
+ 
+- DXE FOUNDATION Theory of Operation
+- The First goal is to Initialize the Platform – Initialize the Chipset and the platform 
+
+- We want to Load Drivers to construct an environment that can support boot manager and  boot the OS 
+
 ---
 @title[UEFI Boot Flow DXE]
 #### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>DXE</b> </span></p>
@@ -256,6 +279,33 @@ DXE <Br>
 
 Note:
 DXE - EFI System Table<Br>   
+UEFI system table passed into your driver
+
+It contains a pointer the System Configuration table  - This is an array of GUID Pointer pairs -  you can see the DXE Services table – The HOBs so for example if you have a PEIM that produces some data –and produces a GUIDed HOB this is how you would get the pointer to that HOBs – other examples 
+
+The UEFI System table also has fields in it that point to the active consoles  - Input Console – Output Console – These would be used for the “Printf” i.e. Debug mechanism you  can use the Error console 
+ UEFI Boot Services Table – we will go through these – this is boot services and goes away once the OS is booted so 
+The Handle database  - that is maintained by the dxe core – The handle data base contains all the pointers to all the protocols that all the drivers produce. 
+
+There are some protocols and handler services that if you have a DXE Driver that produces a  Protocol and that protocol needs to be accessed by other drivers than this is the mechanism to access other protocols – it is a boot services to access protocols thus you know to go to the boot services table definition and look at the boot services available to find which protocol you need or which protocol you need to produce.
+
+The next table pointed to by the UEFI system services table is the UEFI Runtime Services Table – With these services you can access services to variables to read/write – access the real time clock – 
+Run time services have to persist after the OS runtime and these services are still available.
+The system configuration table you can see is still available even after the OS boots. 
+However, recall that these are an array of GUID pointer pairs and that the GUID – so the GUID and pointer will persist but if you have a dependency of those GUIDS back into the  DXE boot services table it will not be valid at Runtime.  
+
+Some additional fields VERSION Information – (not services specifically) – Information that is maintained during Runtime
+
+Summary -
+So that is how the UEFI system table points to many different Services and Data structures within the Firmware – and will be used by your drivers
+
+The DXE core produces the UEFI System Table, and the UEFI System Table is used by every DXE driver and executable image invoked later on in the BDS phase. It contains all the information needed to utilize the services provided by the DXE core, and the services provided by any previously loaded DXE driver.
+The DXE core produces the UEFI Boot Services, UEFI Runtime Services, and DXE Services using the architectural protocols that was produced by the DXE drivers. The UEFI System Table provides access to all the active console devices in the platform.  It provides access to UEFI Configuration Tables. The UEFI Configuration Tables contains more tables such as DXE Services, HOB List, ACPI, SMBIOS, and the SAL System Table. This list can also be expanded in the future.
+Also included, is the handle database. Any executable image can access the handle database for any of the protocol interfaces that have been registered by DXE drivers. 
+When the transition to the OS runtime is performed, the handle database, active consoles, UEFI Boot Services, and services provided by boot service DXE drivers are terminated. This frees up more memory for use by the OS, and leaves the UEFI System Table, UEFI Runtime Services Table, and the system configuration tables available in the OS runtime environment. 
+There is also the option of converting all of the UEFI Runtime Services from a physical address space to an OS-specific virtual address space. This address space conversion may only be performed once. 
+
+Let’s take a quick look at the end product of Framework—the tables that Framework will create for UEFI aware Operating systems.   They are implemented by the drivers dispatched during the DXE phase.  As specified by the UEFI spec, there are boot-time services and runtime services.  There is a handle database and a list of all the protocols that these handles have associated with them.  Of course, keep in mind that all these will be gone from memory when the OS has booted.  The only things that will remain are the runtime services.
 
 +++
 @title[UEFI Boot Flow EFI System Table]
@@ -275,6 +325,35 @@ Created in DXE and is the pointer to everything in the system
 
 Note:
 DXE - UEFI Drivers<Br>
+- Characteristics :
+- UEFI drivers with  do not have dependency so are dispatched last Enhance
+
+- What do UEFI Drivers do?
+- UEFI Drivers extend firmware
+- Add support for new hardware
+- No HW dependence
+- No OS dependence
+- Portable across platforms 
+- IA32, IA64, Intel-64/X64
+- Enables rapid development
+- Contents of a driver:
+- Entry Point
+- Published Functions
+- Consumed Functions
+- Data Structures
+
+
+- UEFI DRIVERS Follow  the UEFI Driver Model Specification  Sec 10 UEFI 2.X Spec
+- Initialization
+- Binding
+	- Supported
+	- Start
+	- Stop
+- Component name
+- Configuration
+- Diagnostic
+- Driver Health
+- Unload
 
 ---
 @title[UEFI Boot Flow BDS]
@@ -285,6 +364,28 @@ DXE - UEFI Drivers<Br>
 
 Note:
 BDS<Br>
+BDS is an Architectural Protocol gets dispatched from the DXE dispatcher.
+
+Policy engine controls how the system will boot and has dependences on the Platform policy
+
+BDS enumerates all possible boot devices in the system and create their boot option variables
+ Current BDS will connect all devices and do this enumeration when user interrupts auto boot 
+- Boot Manager & Device Manager
+- Boot Maintenance Manager
+- Current BDS has two steps to enumerate the boot option
+- Legacy boot option for legacy boot (CSM)
+- UEFI boot option for UEFI boot
+
+- Globally Defined Variables
+  -  BootOrder	ConIn
+  -   BootNext		ConOut
+  -   Boot####	ErrOut
+
+- UEFI Device Path 
+- An UEFI Device Path describes a boot target
+- Binary description of the physical location of a specific target
+
+
 
 +++
 @title[UEFI Boot Flow Device Path]
@@ -295,6 +396,41 @@ BDS<Br>
 
 Note:
 Device Path and Global Variables<Br>
+The use of device paths allows the system resources to be defined in terms of connections between hardware devices, and the “pathways” the processor must follow to get to those devices.  
+
+This includes the pathway to a specific boot device.
+(NOTE: This slide REALLY has to be seen as a build slide, each step is very important in the overall under standing of the process.  However, the animation (line change from RED to black and back is not necessary and not included in this breakdown)
+
+In the Example: 
+The Boot target is the OS loader UEFI Application located on the third partition of the Master drive on the primary ATA controller off of the PCI Device 1Fh, function #1, off of the primary PCI host bridge (Bus zero).   This is how we would refer to this target, starting form the target working back to the processor, in UEFI, the target is defined starting from the processor, as devices are discovered and drivers are loaded in the boot process.  
+
+Starting from the beginning, The initialization of the PCI Root Bridge is a one of the fundamental steps in system initialization,   Many hardware components are attached to the PCI bus, and this step is necessary to discover all subsequent devices on the PCI bus.  In the example, the PNP ID found is associated with the Root PCI device in the system (the Northbridge/Southbridge pair, or the equivalent).  This establishes the basis of PCI BUS zero and the root for additional PCI devices (and buses).
+
+On PCI Bus zero, there exists (device 1Fh, Function 1) and IDE controller.  This device discovered and initialized by a driver to initialize PCI devices.  Note: this process is part of PCI initialization, it initialized the controller, but is not concerned with any “children” devices attached (downstream) to the controller, this will be handled later.
+
+The devices on the IDE controller are now being initialized.  An ATA driver is associated with the drives, and the the Primary Master disk drive is now initialized.  
+
+This occurs at the same time the system consoles are established (near boot device select timeframe).  This is important, as the HDD will not be initialize in the Pre-boot flow, unless it is the current “Targeted Boot Device” or the user has selected “Setup” as the boot path.
+
+If the HDD is the Current targeted device, then it has to be initialized to be able to use for boot (obviously).  However, if the system does not need the device to attempt the boot, then it will not waste time initializing a device that is not necessary.
+
+In the case of setup, the system is not ‘booting’ to an OS, but rather the user is configuring the systems options.  It is therefore necessary for all system options (hardware) to be initialized, so the user has a complete and accurate inventory to work with in the configuration process.
+
+The drive was initialized in the last step, but drives may contain several partitions (in this case, the partition of interest is Partition 3), so a partition driver is associated to point to the proper partition on the drive.
+
+The final stage in following the path, is to access the files on the target partition and load the Boot loader program.  
+
+File access is handled by a File system driver, which has to be initialized for the drive and partition targeted (Primary Master ATA, Partition #3).  Once initialized, the file structure can be parsed, the the boot loader file (OSLoader.efi) can be loaded into memory and executed.  
+
+This begins the launch of the OS, and the transition state for the boot firmware to the operating system.
+
+However, now that the process is underway, there is still the software process of booting the OS.  The OS loader will ensure that the system is capable of booting the OS by running diagnostics (at least to ensure that the OS image on the disk is viable to boot an OS).  IF the diagnostics fail, the OS loader can return the system to the firmware, to allow it to attempt to boot from the next boot target in the list of ‘bootable devices”.
+
+Assuming a complete and successful execution of Diagnostics, the OS loader will load the OS code, and the Boot process will complete as part of the OS’s function.
+
+This Boot of the operating system was initiated, and successful, starting from a a simple path defining the device (location) from which to boot, and ending with a viable OS execution on the platfrom. 
+
+
 
 ---
 @title[UEFI Boot Flow HII]
@@ -305,6 +441,40 @@ Device Path and Global Variables<Br>
 
 Note:
 HII<Br>
+UEFI Human Interface Infrastructure (HII)
+System firmware has a common setup browser
+Drivers don’t carry their own UI
+Single point for pre-OS setup interface
+Firmware & Drivers publish to a “database”
+
+Components:
+Strings are represented by string tokens.  They are listed in a table and referenced by a token number.  This results in multiple language support.  Depending the language, different tables are accessed.
+Fonts
+Presumption of bitmap fonts for easier localization
+Keyboard
+Keyboard Mapping
+Forms
+Describe user interface layout for ‘windowing’ interfaces
+An application that uses String and Font support
+Package
+Self supporting data structure containing fonts, strings, and forms from a driver or set of drivers
+
+
+Minimum FILES needed for HII 
+.c - Driver source file  
+Consumes HII protocols
+Produces EFI_HII_CONFIGURATION_ACCESS_PROTOCOL
+Publishes Forms Package
+.h   Driver include file 
+Defines configuration data
+Defines private data 
+.uni    Strings file 
+Defines strings in different languages
+.vfr    Forms file  
+Defines the layout of the screen 
+.inf    Pre-Make file 
+
+	
     
 +++
 @title[UEFI Boot Flow HII- Simple]
@@ -323,6 +493,7 @@ HII<Br>
 Note:
 HII<Br>
     Complex
+- 
 ---
 @title[UEFI Boot Flow Shell]
 #### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<b>TSL</b> </span></p>
@@ -332,6 +503,8 @@ HII<Br>
 
 Note:
 UEFI Shell<Br>
+- UEFI Shell has complete control of the whole platform and resources
+	
 ---
 @title[UEFI Boot Flow Boot Loader]
 #### <p align="center"><span class="gold"  text-align: top >UEFI - PI & EDK II Boot Flow </span><span style="color:white;">-&nbsp;<b>Boot Loader</b> </span></p>
@@ -341,6 +514,8 @@ UEFI Shell<Br>
 
 Note:
 Boot Loader<Br>
+- OS Boot Loader Application will call "Exit Boot Services"
+	
 
 +++                
 @title[UEFI Boot Flow Boot UEFI OS]
@@ -351,6 +526,20 @@ Boot Loader<Br>
 
 Note:
 Boot UEFI OS<Br>
+TSL: 
+- Pre –boot 
+- Can run UEFI Applications and Drivers
+- EFI System Table is available
+- All of the system is available (I/O, Memory, PCI devices,  NV Ram, etc)
+- Manufacturing Test Applications can run
+- UEFI Shell 
+
+
+Run Time
+
+- Our Job is done
+
+- When the OS takes over it can provide a virtual address space for the EFI Runtime Services. See UEFI 2.5 Chapter 7 Runtime Services - 7.4 Virtual Memory Services
 
 ---
 @title[UEFI Boot Legacy]
@@ -371,8 +560,9 @@ Legacy boot with CSM<Br>
 
 Note:
 Legacy boot with CSM<Br>
+UEFI is not available until after a reset
 
----?image=assets/images/binary-strings-black2.jpg
+---?image=assets/images/binary-strings-black.jpg
 @title[Intel FSP Section]
 #### <p align="center"><span class="gold"  text-align: top >The Intel® Firmware Support Package <BR> (Intel® FSP)
 </span>
@@ -393,6 +583,12 @@ Intel FSP is currently available for the many Intel hardware-producing divisions
 See: <a href="https://firmware.intel.com/learn/fsp/about-intel-fsp"> About Intel FSP</a> <br>
 White Paper Example: <a href="https://github.com/mangguo321/Braswell/blob/master/Documents/Open_Braswell_Platform_Designing_Porting_Guide.pdf">
 Open Braswell - Design and Porting Guide</a></span></p>
+
+Notes:
+The Intel® Firmware Support Package (Intel® FSP) is a royalty-free option for initializing Intel silicon, designed for integration into a boot loader of the developer's choice. It is easy to adopt, is scalable to design, reduces time to market, and is economical to build. Intel FSP provides a binary package to initialize the processor, memory controller, and Intel® chipset initialization functions.
+Intel FSP is designed for integration into a variety of boot loaders, including coreboot and TianoCore (open source Unified Extensible Firmware Interface [UEFI]).
+
+
 
 ---
 @title[Intel FSP Diagram-1]
@@ -454,7 +650,7 @@ Platform Initialization (PI) & UEFI w/ EDK <Br>
 
 
 - Examples of binary instances on http://www.intel.com/fsp 		with integration guides<br>  
-- This includes hardware initialization code that is EDK II based PEI Modules (PEIM’s)<BR>
+    - This includes hardware initialization code that is EDK II based PEI Modules (PEIM’s)<BR>
 - Modules are encapsulated as a UEFI PI firmware volume 		w/ extra header<BR>
 - Configure w/Vital Product Data (VPD)-style Platform 		Configuration Data (PCD) externalized from the modules
 +++
@@ -474,6 +670,11 @@ Platform Initialization (PI) & UEFI w/ EDK <Br>
   - <a href="https://github.com/tianocore/edk2/tree/master/MdeModulePkg"> /MdeModulePkg </a>
 - And the code to create the Intel FSP interfaces can be found at 
    - <a href="https://github.com/tianocore/edk2/tree/master/IntelFsp2Pkg"> /IntelFsp2Pkg </a>
+Notes:
+
+All of the public FSP’s are ‘EDK2-based’.   This package is the alignment of producing FSP’s going forward w/ aligned code.  This is the silicon reference code which is currently NDA – memory init PEIM + PCH init + uncore init.  It is a subset of the silicon pieces we have today.  Today’s RC is the superset.  Align customization over time.
+
+Talking point – anyone would could be producer.  IBV could.  Just worry about quality/consistency.   Don’t put on a foil but have a position to respond to this.   FspPkg given to customers just like SI Rc.  NDA folks can do it.  OEM’s can do it.  OEM’s can produce it.  IBV + OEM are logical YES – under the SI code license NDA.   Platform SLA.
 
 
 ---?image=assets/images/binary-strings-black2.jpg  
@@ -576,7 +777,7 @@ Wrapper is responsible for communicating with Braswell FSP APIs in SEC, PEI, and
 BDS phase
 https://github.com/mangguo321/Braswell/raw/master/Documents/Open_Braswell_Platform_Designing_Porting_Guide.pdf 
 
----
+---?image=assets/images/gitpitch-audience.jpg
 @title[Logo Slide]
 
 ![Logo Slide](/assets/images/TianocoreLogo.png =10x)
