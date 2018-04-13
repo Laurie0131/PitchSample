@@ -759,7 +759,8 @@ file unmodified.
 
 Redistributions in compiled form (transformed to other DTDs, converted to PDF, epub, HTML
 and other formats) must reproduce the above copyright notice, this list of conditions and 
-the following disclaimer in the documentation and/or other materials provided with the distribution.
+the following disclaimer in the documentation and/or other materials provided with the 
+distribution.
 
 THIS DOCUMENTATION IS PROVIDED BY TIANOCORE PROJECT "AS IS" AND ANY EXPRESS OR IMPLIED 
 WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND 
