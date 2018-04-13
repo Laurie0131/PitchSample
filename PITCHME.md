@@ -1,3 +1,5 @@
+---?image=assets/images/gitpitch-audience.jpg
+@title[Title-UEFI Overview]
 <!--- @file
   PitchSample.md for UEFI / EDK II Training
 
@@ -29,8 +31,8 @@
 
 -->
 
----?image=assets/images/gitpitch-audience.jpg
-@title[Title-UEFI Overview]
+
+
 ## <span class="gold"  text-align: top >UEFI & EDK II Training</span>
 #### UEFI and Platform Initialization (PI) Overview
 <br>
